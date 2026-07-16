@@ -85,6 +85,55 @@
             border-radius: 4px;
         }
 
+                .book-title .book-meta {
+            font-size: 1rem;
+            font-weight: 400;
+            color: #6b5f53;
+            margin-top: 0.5rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.3rem 0.6rem;
+        }
+
+        .book-title .book-meta .genre {
+            font-weight: 500;
+            color: #a68d7a;
+            letter-spacing: 0.04em;
+            background: #f5f0ea;
+            padding: 0.1rem 0.9rem;
+            border-radius: 20px;
+        }
+
+        .book-title .book-meta .editor {
+            font-weight: 400;
+        }
+
+        .book-title .book-meta .availability {
+            font-weight: 400;
+            color: #8a7e72;
+            font-style: italic;
+        }
+
+        .book-title .book-meta .separator {
+            color: #c9b8a8;
+            font-weight: 300;
+        }
+
+        /* Responsive pour les petits écrans */
+        @media (max-width: 480px) {
+            .book-title .book-meta {
+                font-size: 0.9rem;
+                flex-direction: column;
+                gap: 0.2rem;
+            }
+            .book-title .book-meta .separator {
+                display: none;
+            }
+        }
+
         /* --- PARAGRAPHE D'ACCROCHE --- */
         .presentation {
             font-size: 1.15rem;
@@ -243,6 +292,13 @@
         <!-- TITRE DU ROMAN -->
         <div class="book-title">
             <h2>L'Initié</h2>
+            <p class="book-meta">
+                <span class="genre">Thriller financier</span>
+                <span class="separator">·</span>
+                <span class="editor">Le Cherche-Midi éditeur</span>
+                <span class="separator">·</span>
+                <span class="availability">Disponible en janvier 2027</span>
+            </p>
             <div class="divider"></div>
         </div>
 
