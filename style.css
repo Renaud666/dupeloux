@@ -90,26 +90,52 @@
         }
 
 /* --- NAVIGATION --- */
-
 .nav {
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 2.5rem 0 1.5rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid #f0ebe5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 .nav a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
     color: #6b5f53;
     text-decoration: none;
-    padding: 0.3rem 1rem;
+    padding: 0.45rem 1.2rem;
     border-radius: 30px;
     transition: color 0.3s ease, background 0.3s ease;
-    font-size: 0.95rem;
 }
 
-.nav a:hover,
+.nav a:hover {
+    color: #ffffff;
+    background: #a68d7a;
+}
+
 .nav a.active {
-    background: #f5f0ea;
     color: #a68d7a;
+    background: #f5f0ea;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .nav {
+        gap: 0.3rem;
+        margin: 2rem 0 1rem 0;
+        padding-top: 1.5rem;
+    }
+
+    .nav a {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.9rem;
+    }
 }
 
 
