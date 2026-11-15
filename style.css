@@ -188,52 +188,60 @@
             border-radius: 4px;
         }
 
-                .book-title .book-meta {
-            font-size: 1rem;
-            font-weight: 400;
-            color: #6b5f53;
-            margin-top: 0.5rem;
-            margin-bottom: 0.8rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 0.3rem 0.6rem;
-        }
-
-        .book-title .book-meta .genre {
-    font-weight: 500;
-    color: #a68d7a;
-    letter-spacing: 0.04em;
-    cursor: default;   /* confirme : pas cliquable */
+           .book-title .book-meta {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #6b5f53;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem 0.9rem;
+    letter-spacing: 0.02em;
 }
 
-        .book-title .book-meta .editor {
-            font-weight: 400;
-        }
+      .book-title .book-meta .genre {
+    font-weight: 500;
+    color: #a68d7a;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
 
-        .book-title .book-meta .availability {
-            font-weight: 400;
-            color: #8a7e72;
-            font-style: italic;
-        }
+       .book-title .book-meta .editor {
+    font-weight: 400;
+    color: #6b5f53;
+}
 
-        .book-title .book-meta .separator {
-            color: #c9b8a8;
-            font-weight: 300;
-        }
+      .book-title .book-meta .availability {
+    font-weight: 400;
+    color: #8a7e72;
+    font-style: italic;
+}
+
+       .book-title .book-meta .separator {
+    color: #c9b8a8;
+    font-weight: 300;
+    font-size: 0.85rem;
+}
 
         /* Responsive pour les petits écrans */
         @media (max-width: 480px) {
-            .book-title .book-meta {
-                font-size: 0.9rem;
-                flex-direction: column;
-                gap: 0.2rem;
-            }
-            .book-title .book-meta .separator {
-                display: none;
-            }
-        }
+    .book-title .book-meta {
+        font-size: 0.85rem;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+    .book-title .book-meta .separator {
+        display: none;
+    }
+    .book-title .book-meta .genre {
+        font-size: 0.75rem;
+    }
+}
 
         /* --- PARAGRAPHE D'ACCROCHE --- */
         .presentation {
