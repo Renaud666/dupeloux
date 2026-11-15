@@ -89,6 +89,30 @@
             background: #a68d7a;
         }
 
+/* --- NAVIGATION --- */
+
+.nav {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav a {
+    color: #6b5f53;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    transition: color 0.3s ease, background 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.nav a:hover,
+.nav a.active {
+    background: #f5f0ea;
+    color: #a68d7a;
+}
+
+
         /* --- TITRE DU ROMAN --- */
         .book-title {
             text-align: center;
@@ -306,26 +330,4 @@
             }
         }
 
--- navigation
 
-
-.nav {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-.nav a {
-    color: #6b5f53;
-    text-decoration: none;
-    padding: 0.3rem 1rem;
-    border-radius: 30px;
-    transition: color 0.3s ease, background 0.3s ease;
-    font-size: 0.95rem;
-}
-
-.nav a:hover,
-.nav a.active {
-    background: #f5f0ea;
-    color: #a68d7a;
-}
