@@ -205,9 +205,6 @@
     font-weight: 500;
     color: #a68d7a;
     letter-spacing: 0.04em;
-    background: #f5f0ea;
-    padding: 0.1rem 0.9rem;
-    border-radius: 20px;
     cursor: default;   /* confirme : pas cliquable */
 }
 
