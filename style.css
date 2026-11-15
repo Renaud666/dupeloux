@@ -94,13 +94,11 @@
     box-shadow: 0 4px 12px rgba(166, 141, 122, 0.3);
 }
 
-/* --- NAVIGATION --- */
+
 /* --- NAVIGATION --- */
 .nav {
     text-align: center;
     margin: 2.5rem 0 1.5rem 0;
-    padding-top: 2rem;
-    border-top: 1px solid #f0ebe5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
