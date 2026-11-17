@@ -335,7 +335,20 @@
         text-align: left;
     }
 
-    /* --- BOUTONS D'ACTION (CTA) --- */
+    /* Sur mobile, les boutons s'empilent et prennent toute la largeur */
+    .cta-wrapper {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* --- BOUTONS D'ACTION (CTA) --- */
 .cta-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -354,7 +367,7 @@
     text-decoration: none;
     padding: 0.75rem 1.8rem;
     border-radius: 30px;
-    border: 2px solid #a68d7a;   /* pour que les 2 boutons aient la même hauteur */
+    border: 2px solid #a68d7a;
     transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
@@ -365,7 +378,6 @@
     box-shadow: 0 6px 18px rgba(166, 141, 122, 0.35);
 }
 
-/* Variante secondaire : contour plutôt que plein */
 .cta-button--secondary {
     background: transparent;
     color: #a68d7a;
@@ -376,7 +388,6 @@
     color: #ffffff;
     border-color: #a68d7a;
     box-shadow: 0 6px 18px rgba(166, 141, 122, 0.25);
-}
 }
 
         /* --- SECTIONS THEMATIQUES --- */
@@ -467,8 +478,14 @@
             }
 
             .presentation::first-letter {
-                font-size: 3rem;
-            }
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    float: none;
+    line-height: inherit;
+    margin-right: 0;
+    color: inherit;
+}
 
             .section h3 {
                 font-size: 1.5rem;
